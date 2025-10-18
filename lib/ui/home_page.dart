@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '/ui/product_list_page.dart';
+import '/ui/cart_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
@@ -13,7 +14,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: const Color(0xFFFFF8F0),
       appBar: AppBar(
         backgroundColor: color,
-        title: const Text('Bakery Ecommerce'),
+        title: const Text('Pan Comido'),
         centerTitle: true,
         elevation: 4,
       ),
@@ -22,17 +23,16 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // 🧁 Imagen principal o banner
-            ClipRRect(
-              borderRadius: BorderRadius.circular(20),
-              child: Image.asset(
-                'assets/images/bakery_banner.png', 
-                height: 180,
-                width: double.infinity,
-                fit: BoxFit.cover,
-              ),
-            ),
-            const SizedBox(height: 25),
+            // ClipRRect(
+            //   borderRadius: BorderRadius.circular(10),
+            //   child: Image.asset(
+            //     'assets/images/bakery_banner.png', 
+            //     height: 190,
+            //     width: double.infinity,
+            //     fit: BoxFit.cover,
+            //   ),
+            // ),
+            const SizedBox(height: 1),
 
             Text(
               'Bienvenido a nuestra panaderia ',
